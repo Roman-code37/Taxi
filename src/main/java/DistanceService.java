@@ -1,7 +1,20 @@
 public class DistanceService {
-    int landingAmount = 60;
-    int costKilometr = 20;
-int order = 1000;
-int discount = 5;
+    int predict(int landingСost,
+                int oneKilometer,
+                int costOrderForDiscount,
+                int discountPercent,
+                int maxDiscount,
+                int discount,
+                int distance) {
+        int costOrder = landingСost + oneKilometer * distance;
+        if (costOrder > costOrderForDiscount) {
+            discount = costOrder * discountPercent / 100;
+            if (discount <= maxDiscount);
+        } else
+            discount =0;
+        int finalyCostOfOrder = costOrder - discount;
+        return finalyCostOfOrder;
+
+    }
 
 }
