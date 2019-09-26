@@ -1,4 +1,4 @@
-public class DistanceService {
+public class TaxiService {
     int predict(int landingСost,
                 int oneKilometer,
                 int costOrderForDiscount,
@@ -9,7 +9,6 @@ public class DistanceService {
         int costOrder = landingСost + oneKilometer * distance;
         if (costOrder > costOrderForDiscount) {
             discount = costOrder * discountPercent / 100;
-            if (discount <= maxDiscount);
         } else
             discount =0;
         int finalyCostOfOrder = costOrder - discount;
